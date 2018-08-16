@@ -6,6 +6,7 @@ using ASCOM.Utilities;
 using System;
 using System.Collections;
 using System.Linq;
+using System.Runtime.InteropServices;
 
 namespace ASCOM.DSLR
 {
@@ -68,6 +69,7 @@ namespace ASCOM.DSLR
         }
     }
 
+    [ComVisible(true)]
     public partial class Camera
     {
         private CameraSettingsProvider _settingsProvider;
