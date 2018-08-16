@@ -69,7 +69,6 @@ namespace ASCOM.DSLR
         }
     }
 
-    [ComVisible(true)]
     public partial class Camera
     {
         private CameraSettingsProvider _settingsProvider;

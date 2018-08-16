@@ -55,6 +55,7 @@ namespace ASCOM.DSLR
     /// </summary>
     [Guid("37206417-4b15-49f0-ae46-a1e52aa20c2e")]
     [ClassInterface(ClassInterfaceType.None)]
+    [ComVisible(true)]
     public partial class Camera : ICameraV2
     {
         /// <summary>
