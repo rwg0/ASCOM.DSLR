@@ -13,7 +13,7 @@ DefaultDirName="{cf}\ASCOM\Camera\ASCOM.DSLR.Camera"
 DisableDirPage=yes
 DisableProgramGroupPage=yes
 OutputDir="."
-OutputBaseFilename="DSLR.Camera Setup"
+OutputBaseFilename="DSLR.Camera.Setup"
 Compression=lzma
 SolidCompression=yes
 ; Put there by Platform if Driver Installer Support selected
