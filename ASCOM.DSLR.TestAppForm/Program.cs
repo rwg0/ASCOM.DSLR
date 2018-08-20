@@ -8,8 +8,10 @@ using System.Drawing.Imaging;
 using System.IO;
 using System.IO.Ports;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using ASCOM.DSLR.Native;
 
 namespace ASCOM.DSLR
 {
@@ -21,20 +23,29 @@ namespace ASCOM.DSLR
         [STAThread]
         static void Main()
         {
-            ExecuteCommand("--status --debug --timeout 3");
-
-            var d = ParseStatus(File.ReadAllText(@"c:\git-vtorkalo\ASCOM.DSLR\testdata\status.txt"));
-
-
-
-            var p = new ImageDataProcessor();
-
-            var detector = new CameraModelDetector(p);
-
-            var data0 = p.ReadRaw(@"d:\ascomdev\git\ASCOM.DSLR\testdata\test.dng-0000.dng");
-
-
+            //Trace.WriteLine(Marshal.SizeOf<libraw_image_sizes_t>());
+            //Trace.WriteLine(Marshal.SizeOf<libraw_iparams_t>());
+            //Trace.WriteLine(Marshal.SizeOf< libraw_lensinfo_t>());
+            //Trace.WriteLine(Marshal.SizeOf<libraw_makernotes_t>());
+            //Trace.WriteLine(Marshal.SizeOf<libraw_shootinginfo_t>());
+            //Trace.WriteLine(Marshal.SizeOf<libraw_output_params_t>());
+            //Trace.WriteLine(Marshal.SizeOf<libraw_colordata_t>());
             
+            //new ImageDataProcessor().ReadRaw(@"C:\Users\robin\Pictures\ASCOM_DSLR\IMG_0,1s_100iso_29C_2018-08-19--18-18-24.CR2");
+            ////ExecuteCommand("--status --debug --timeout 3");
+
+            ////var d = ParseStatus(File.ReadAllText(@"c:\git-vtorkalo\ASCOM.DSLR\testdata\status.txt"));
+
+
+
+            ////var p = new ImageDataProcessor();
+
+            ////var detector = new CameraModelDetector(p);
+
+            ////var data0 = p.ReadRaw(@"d:\ascomdev\git\ASCOM.DSLR\testdata\test.dng-0000.dng");
+
+
+            //return;
 
 
             Application.EnableVisualStyles();

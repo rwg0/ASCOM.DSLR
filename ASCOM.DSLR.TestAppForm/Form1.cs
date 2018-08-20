@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Threading;
 using System.Windows.Forms;
+using ASCOM.DeviceInterface;
 
 namespace ASCOM.DSLR
 {
@@ -61,6 +63,7 @@ namespace ASCOM.DSLR
         private void button1_Click(object sender, EventArgs e)
         {
             driver.StartExposure(2, true);
+            SpinWait.SpinUntil(() => driver.CameraState == CameraStates.cameraIdle);
         }
     }
 }
