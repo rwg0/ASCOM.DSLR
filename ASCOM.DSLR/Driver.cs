@@ -53,7 +53,8 @@ namespace ASCOM.DSLR
     /// <summary>
     /// ASCOM Camera Driver for DSLR.
     /// </summary>
-    [Guid("37206417-4b15-49f0-ae46-a1e52aa20c2e")]
+    [Guid("7137149B-86D6-419D-827A-15885DD860F8")]
+    [ProgId("ASCOM.DSLR.Camera.SharpCapTest")]
     [ClassInterface(ClassInterfaceType.None)]
     [ComVisible(true)]
     public partial class Camera : ICameraV2
@@ -62,12 +63,12 @@ namespace ASCOM.DSLR
         /// ASCOM DeviceID (COM ProgID) for this driver.
         /// The DeviceID is used by ASCOM applications to load the driver at runtime.
         /// </summary>
-        internal static string driverID = "ASCOM.DSLR.Camera";
+        internal static string driverID = "ASCOM.DSLR.Camera.SharpCapTest";
         // TODO Change the descriptive string for your driver then remove this line
         /// <summary>
         /// Driver description that displays in the ASCOM Chooser.
         /// </summary>
-        private static string driverDescription = "ASCOM Camera Driver for DSLR";
+        private static string driverDescription = "ASCOM Camera Driver for DSLR (SharpCap Test Version)";
 
         internal static string cameraSettingsProfileName = "CameraSettings_"+ Process.GetCurrentProcess().ProcessName; // Constants used for Profile persistence
 
