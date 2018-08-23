@@ -4,7 +4,7 @@
 ;
 [Setup]
 AppID={{64931281-9e67-4d94-bc2a-083a023714fd}
-AppName=ASCOM DSLR.Camera Camera Driver
+AppName=ASCOM DSLR.Camera Camera Driver (SharpCap Beta Test Version)
 AppVerName=ASCOM DSLR.Camera Camera Driver 6.3.0 (SharpCap Beta Test Version)
 AppVersion=6.3.0
 VersionInfoVersion=6.3.0
